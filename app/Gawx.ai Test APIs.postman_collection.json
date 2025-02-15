@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "e24865fb-d7b1-4b5c-a510-7e8e8cd3eb8a",
+		"name": "Gawx.ai Test APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1218693"
+	},
+	"item": [
+		{
+			"name": "Signin - get access token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@gawx.ai",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "qwerty1.A@",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{server_url}}/api/token/",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server_url",
+			"value": "https://demo-server.gawx.ai",
+			"type": "string"
+		}
+	]
+}
